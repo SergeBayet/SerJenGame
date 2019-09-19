@@ -150,7 +150,7 @@ function addHighScore(score) {
   let day = today.getDate();
   let fullDate = day + "/" + month + "/" + year;
   let newHighScore = fullDate + " : " + score;
-  if (highScore == "0") {
+  if (highScore == "") {
     highScore = newHighScore;
   } else {
     highScore = newHighScore + ";" + highScore;
