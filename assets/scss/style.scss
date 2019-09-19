@@ -1,18 +1,20 @@
 body {
   background-color: #16013e;
-  color: #ffffff; }
-
+  color: #ffffff;
+}
 .logoclass {
-  margin: 0; }
-  .logoclass .logo {
+  margin: 0;
+  .logo {
     max-width: 100%;
     height: auto;
-    margin-top: 20px; }
+    margin-top: 20px;
+  }
+}
 
 #gametitle {
   width: auto;
-  padding-top: 2rem; }
-
+  padding-top: 2rem;
+}
 #bouton-select {
   position: relative;
   max-width: 400px;
@@ -22,8 +24,8 @@ body {
   background-color: #ffffff;
   height: 50%;
   margin: auto;
-  z-index: 10; }
-  #bouton-select #difficulte {
+  z-index: 10;
+  #difficulte {
     border: none;
     outline: none;
     background: transparent;
@@ -36,8 +38,10 @@ body {
     width: 100%;
     padding: 12px 55px 15px 15px;
     font-size: 14px;
-    color: #040108; }
-  #bouton-select:after {
+    color: #040108;
+  }
+
+  &:after {
     position: absolute;
     right: 0;
     top: 0;
@@ -49,11 +53,12 @@ body {
     color: #040108;
     font-size: 24px;
     border-left: 1px solid #5c1bbe;
-    z-index: -1; }
-
+    z-index: -1;
+  }
+}
 #image-pendu {
-  margin-top: 30px; }
-
+  margin-top: 30px;
+}
 span {
   padding: 20px 30px;
   font-size: 35px;
@@ -63,30 +68,33 @@ span {
   margin-right: 25px;
   display: block;
   float: left;
-  line-height: 20px; }
-  span.active:hover {
+  line-height: 20px;
+  &.active:hover {
     background-color: #3c1c78;
-    cursor: pointer; }
-  span.inactive {
-    background-color: grey; }
-
+    cursor: pointer;
+  }
+  &.inactive {
+    background-color: grey;
+  }
+}
 #start-game {
-  margin-top: 25px; }
-
+  margin-top: 25px;
+}
 #mask {
   margin-top: 20px;
   font-family: "Courier New", Courier, monospace;
-  font-size: 40px; }
-
+  font-size: 40px;
+}
 #remaining-guesses {
-  margin-top: 10px; }
-
+  margin-top: 10px;
+}
 .list-group {
   margin-top: 50px;
   width: 200px;
   margin-left: auto;
   margin-right: auto;
-  background-color: black; }
-
+  background-color: black;
+}
 li.list-group-item {
-  color: green; }
+  color: green;
+}
