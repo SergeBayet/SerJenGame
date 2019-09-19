@@ -163,8 +163,10 @@ function displayHighscore() {
   let individualHighScores = highScore.split(";");
   let tableHighScores = [];
   individualHighScores.forEach(element => {
-    let x = element.split(":");
-    tableHighScores.push({ date: x[0].trim(), score: parseInt(x[1].trim()) });
+    if (element !== "") {
+      let x = element.split(":");
+      tableHighScores.push({ date: x[0].trim(), score: parseInt(x[1].trim()) });
+    }
   });
   tableHighScores.sort((a, b) => (a.score < b.score ? 1 : -1));
   console.log(tableHighScores);
