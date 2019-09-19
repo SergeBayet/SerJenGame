@@ -159,7 +159,7 @@ function addHighScore(score) {
   displayHighscore();
 }
 function displayHighscore() {
-  if (highScore == "0") return false;
+  if (highScore == "") return false;
   let individualHighScores = highScore.split(";");
   let tableHighScores = [];
   individualHighScores.forEach(element => {
